@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1617dea6-2cb7-401e-bba9-2a3600856a06</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>WizzardAI2016</Name>
+    <RootNamespace>WizzardAI2016</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="model\ActionType.py" />
+    <Compile Include="model\Bonus.py" />
+    <Compile Include="model\BonusType.py" />
+    <Compile Include="model\Building.py" />
+    <Compile Include="model\BuildingType.py" />
+    <Compile Include="model\CircularUnit.py" />
+    <Compile Include="model\Faction.py" />
+    <Compile Include="model\Game.py" />
+    <Compile Include="model\LaneType.py" />
+    <Compile Include="model\LivingUnit.py" />
+    <Compile Include="model\Message.py" />
+    <Compile Include="model\Minion.py" />
+    <Compile Include="model\MinionType.py" />
+    <Compile Include="model\Move.py" />
+    <Compile Include="model\Player.py" />
+    <Compile Include="model\PlayerContext.py" />
+    <Compile Include="model\Projectile.py" />
+    <Compile Include="model\ProjectileType.py" />
+    <Compile Include="model\SkillType.py" />
+    <Compile Include="model\Status.py" />
+    <Compile Include="model\StatusType.py" />
+    <Compile Include="model\Tree.py" />
+    <Compile Include="model\Unit.py" />
+    <Compile Include="model\Wizard.py" />
+    <Compile Include="model\World.py" />
+    <Compile Include="model\__init__.py" />
+    <Compile Include="MyStrategy.py" />
+    <Compile Include="RemoteProcessClient.py" />
+    <Compile Include="Runner.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="model\" />
+  </ItemGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
